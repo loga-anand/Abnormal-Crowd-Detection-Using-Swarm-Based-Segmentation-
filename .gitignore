@@ -1,0 +1,13 @@
+crowd_env/
+venv/
+dataset/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.dll
+*.h5
+*.pkl
+*.pt
+*.log
+*.mp4

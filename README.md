@@ -24,19 +24,22 @@ This project addresses these issues using optimized segmentation + hybrid decisi
 
 The system follows a 6-step pipeline:
 
-🔹 1. Video Input & Frame Extraction
+1. Video Input & Frame Extraction
 Extracts frames from surveillance videos
 Processes frames at a fixed interval for efficiency
-🔹 2. Frame Preprocessing
+
+2. Frame Preprocessing
 Converts frames to grayscale
 Resizes images to 224 × 224
 Reduces noise and standardizes input
-🔹 3. Swarm Intelligence-Based Segmentation (RIWPSO)
+
+3. Swarm Intelligence-Based Segmentation (RIWPSO)
 Uses Random Inertia Weight Particle Swarm Optimization
 Optimizes threshold values for segmentation
 Separates foreground crowd regions from background
 Runs periodically (not every frame) for performance optimization
-🔹 4. Feature Extraction
+
+4. Feature Extraction
 ✔ CNN Features
 Uses MobileNetV2 (pretrained on ImageNet)
 Extracts 1280-dimensional feature vectors
@@ -49,7 +52,8 @@ Motion energy
 
 👉 Note: Motion features are used for rule-based scoring, not primary ML training.
 
-🔹 5. Hybrid Ensemble Learning
+
+5. Hybrid Ensemble Learning
 ✔ Machine Learning Models:
 Support Vector Machine (SVM)
 Random Forest (RF)
@@ -59,7 +63,8 @@ Features are extracted from segmented images
 Labels are automatically assigned (prototype-based):
 First half → Normal
 Second half → Abnormal
-🔹 6. Decision Fusion & Anomaly Detection
+
+6. Decision Fusion & Anomaly Detection
 
 The final decision is made using a weighted hybrid approach:
 
@@ -169,7 +174,8 @@ Optimize model for low-latency real-time inference
 
 👨‍💻 Author
 
-Loga Anand M
+Loga Anand M 
+
 Computer Science and Engineering 
 
 ⭐ Conclusion

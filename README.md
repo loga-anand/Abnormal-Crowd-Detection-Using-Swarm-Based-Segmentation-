@@ -129,16 +129,21 @@ Abnormal-Crowd-Detection
 └── results/
 
 ▶️ How to Run the Project
+
 Step 1 — Clone Repository
 git clone https://github.com/loga-anand/Abnormal-Crowd-Detection-Using-Swarm-Based-Segmentation-.git
-cd Abnormal-Crowd-Detection-Using-Swarm-Based-Segmentation-
+cd Abnormal-Crowd-Detection-Using-Swarm-Based-Segmentation
+
 Step 2 — Create Virtual Environment
 python -m venv crowd_env
 crowd_env\Scripts\activate
+
 Step 3 — Install Dependencies
 pip install -r requirements.txt
+
 Step 4 — Run Full Pipeline
 python main.py
+
 Step 5 — Run Streamlit App (Optional)
 streamlit run app.py
 
